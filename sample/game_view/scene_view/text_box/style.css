@@ -1,0 +1,102 @@
+﻿/* テキストボックス・名前ボックスに関する設定 */
+
+@charset "utf-8";/* 文字コードの設定 */
+
+
+#text_box{
+	/* 配置 */
+	position: absolute;		/* 変更不可 */
+	bottom: 1%;
+	left: 1%;
+
+	/* 表示 */
+	display: none;
+
+	/* サイズ */
+	width: 98%;
+	height: 30%;
+	box-sizing: border-box;
+
+	/* ボーダー */
+	border: black 1px solid;
+
+}
+
+#text_box_back{
+	/* 配置 */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* 表示 */
+	display: none;
+	
+	/* サイズ */
+	width: 100%;
+	height: 100%;
+
+}
+
+
+#name_text{
+	/* 配置 */
+	position: absolute;/* 変更不可 */
+	top: -20%;
+
+	/* サイズ */
+	height: 20%;
+	width: 30%;
+
+	/* 背景 */
+	background-color: green;
+
+	/* テキスト */
+	text-align: center;
+}
+
+
+#text_box_content{
+	/* 表示 */
+	display: flex;	/* 変更不可 */
+
+	/* サイズ */
+	width: 100%;	/* 変更不可 */
+	height: 100%;	/* 変更不可 */
+}
+
+#text_box_image{
+	/* サイズ */
+	width: 0;
+
+	/* フレックスアイテム（比率） */
+	flex-grow: 1;
+	flex-shrink: 1;
+
+	/* 背景 */
+	background-color: white;
+}
+
+#text_box_text{
+	/* サイズ */
+	width: 0;	/* 変更不可 */
+
+	/* フレックスアイテム（比率） */
+	flex-grow: 3;
+	flex-shrink: 3;
+
+	/* 背景 */
+	background-color: yellow;
+}
+
+#text_box_text p{
+	/* サイズ */
+	width: 100%;	/* 変更不可 */
+	height: 100%;	/* 変更不可 */
+	box-sizing: border-box;	/* 変更不可 */
+
+	margin: 0;	/* 変更不可 */
+	
+	/* パディング */
+	padding: 2% 5%;
+}
+

@@ -1,0 +1,61 @@
+﻿/* ゲーム全体に関する設定 */
+
+@charset "utf-8";/*文字コードの設定*/
+
+#game{
+	/* フォント */
+	font-size: 16px;	/* デフォルトフォントサイズ */
+
+	/* 配置 */
+	position: relative; /* 変更不可 */
+
+	/* マージン */
+	margin: 0 auto;		/* 変更不可 */
+
+	/* サイズ */
+	width: 100%;		/* 変更不可 */
+	max-width: 640px;
+
+	/* 背景 */
+	background-color: black;
+
+	/* ユーザインタフェース */
+	cursor: pointer;
+
+	/* 選択設定 */
+	user-select: none;		/* 選択不可 */
+	
+}
+
+#game:before{
+	/* コンテント作成 */
+	content: "";		/* 変更不可 */
+
+	/* 表示 */
+	display: block;		/* 変更不可 */
+
+	/* パディング */
+	padding-bottom: 60%;	/* ←縦横比に合わせて変更 */
+
+	/* サイズ */
+	max-height: 100vh;
+}
+
+
+/* スマホ版の設定 */
+@media(max-width: 640px){
+
+	/* 全体のマージン・パディングを0にする */
+	*{
+		margin: 0;		/* 変更不可 */
+		padding: 0;		/* 変更不可 */
+	}
+
+	#game{
+		/* サイズ */
+		max-width: 166.66vh;/* ←縦横比に合わせて変更 */
+
+		/* 上下中央ぞろえの設定を入れる！ */
+	}
+
+}

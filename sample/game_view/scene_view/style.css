@@ -1,0 +1,35 @@
+﻿/* シーン表示部分に関する設定 */
+
+@charset "utf-8";/* 文字コードの設定 */
+
+/* 原則、このファイルには変更を加えない */
+
+#scene_view{
+	/* 配置 */
+	position: relative;/* 変更不可 */
+
+	/* 表示 */
+	overflow: hidden;
+
+	/* サイズ */
+	width: 0;		/* 変更不可 */
+
+	/* フレックスアイテム（比率） */
+	flex-grow: 3;
+	flex-shrink: 3;
+
+	/* 背景 */
+	background-color: blue;
+}
+
+
+.scene{
+	/* 配置 */
+	position: relative;	/* 変更不可 */
+
+	/* サイズ */
+	width: 100%;		/* 変更不可 */
+	height: 100%;		/* 変更不可 */
+
+}
+

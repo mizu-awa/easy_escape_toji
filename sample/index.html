@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--------------------- CSSリンク ------------------------>
+<!----------- 追加なし ------------->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="game_view/style.css">
+<link rel="stylesheet" type="text/css" href="game_view/scene_view/style.css">
+<link rel="stylesheet" type="text/css" href="game_view/scene_view/text_box/style.css">
+<link rel="stylesheet" type="text/css" href="game_view/scene_view/character_image/style.css">
+<link rel="stylesheet" type="text/css" href="game_view/scene_view/item_view/style.css">
+<link rel="stylesheet" type="text/css" href="game_view/item_list/style.css">
+
+<!----------- 追加あり ------------->
+
+
+<!--------------------- Javascriptリンク ------------------------>
+<!-- <script type="text/javascript" src="../js/default_function.js"></script> -->
+
+
+
+<title>サンプル</title>
+</head>
+
+<body>
+
+<main>
+
+
+
+
+<!---------------------- ゲームここから ---------------------->
+<div id="game">
+	<div id="game_view">
+
+
+		<!---------------------- シーン表示 ---------------------->
+		<div id="scene_view">
+
+			<!---------------------- シーン* ---------------------->
+			<div class="scene"><!-- * -->
+				<span class="object"></span><!-- * -->
+			</div>
+
+			<!---------------------- 立ち絵 ---------------------->
+			<div id="character_image">
+				<div id="ci_left"></div>
+				<div id="ci_center"></div>
+				<div id="ci_right"></div>
+			</div>
+
+
+			<!---------------------- アイテム表示 ---------------------->
+			<div id="item_view">
+				<!---------------------- アイテム* ---------------------->
+				<div class="item">
+					<!---------------------- オブジェクト* ---------------------->
+					<span class="object"></span><!-- * -->
+				</div>
+			</div>
+			<div id="item_view_back"></div>
+
+
+			<!---------------------- テキストボックス ---------------------->
+			<div id="text_box">
+				<div id="text_box_content" class="flex_box">
+					<div id="text_box_image"></div>
+					<div id="text_box_text"><p>テキストさんです<br>テキストです</p></div>
+				</div>
+				<div id="name_text">おなまえ</div>
+			</div>
+			<div id="text_box_back"></div>
+
+
+		</div>
+
+
+		<!---------------------- アイテム一覧表示 ---------------------->
+		<div id="item_list">
+			<!---------------------- アイテムサムネイル* ---------------------->
+			<span class="item_thumbnail"></span><!-- * -->
+			<span class="item_thumbnail"></span><!-- * -->
+			<span class="item_thumbnail"></span><!-- * -->
+			<span class="item_thumbnail"></span><!-- * -->
+			<span class="item_thumbnail"></span><!-- * -->
+			<span class="item_thumbnail"></span><!-- * -->
+			<span class="item_thumbnail"></span><!-- * -->
+		</div>
+
+	</div>
+
+	<!---------------------- メニューバー ---------------------->
+	<div id="menu_bar">
+		<span class="object"></span><!-- * -->
+	</div>
+
+	<!---------------------- 常時表示オブジェクト* ---------------------->
+	<span class="scene_over_object">
+	</span>
+	<span class="scene_over_object">
+	</span>
+
+		
+
+</div>
+<!---------------------- ゲームここまで ---------------------->
+
+
+
+
+</main>
+
+</body>
+
+</html>

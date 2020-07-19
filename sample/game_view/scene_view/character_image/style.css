@@ -1,0 +1,14 @@
+﻿@charset "utf-8";/* 文字コードの設定 */
+
+#character_image{
+	/* 表示 */
+	display: none;	/* 変更不可 */
+
+	/* サイズ */
+	width: 100%;	/* 変更不可 */
+	height: 100%;	/* 変更不可 */
+}
+
+#character_image div{
+	
+}

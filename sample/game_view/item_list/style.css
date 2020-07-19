@@ -1,0 +1,65 @@
+﻿/* アイテムサムネイルに関する設定 */
+
+@charset "utf-8";/* 文字コードの設定 */
+
+#item_list{
+
+	/* スクロールバー非表示 */
+	overflow-y: scroll;			/* 変更禁止 */
+	-ms-overflow-style: none;    /* IE, Edge 対応 */
+	scrollbar-width: none;       /* Firefox 対応（非対応になる可能性あり） */
+
+	/* サイズ */
+	width: 0;	/* 変更禁止 */
+
+	/* パディング */
+	padding-top: 2%;
+
+	/*フレックスアイテム（比率）*/
+	flex-grow: 1;
+	flex-shrink: 1;
+
+	/* 背景 */
+	background-color: pink;
+}
+
+/* スクロールバー非表示 */
+#item_list::-webkit-scrollbar{/* Chrome, Safari 対応 */
+	display:none;
+}
+
+.item_thumbnail{
+	/* 表示 */
+	display: inline-block;
+
+	/* サイズ */
+	width: 40%;
+	box-sizing: border-box;
+
+	/*ボーダー*/
+	border: 1px solid red;
+
+	background-color: lightgreen;
+}
+
+.item_thumbnail:nth-child(2n+1){
+	/* マージン */
+	margin-left: 6%;
+	margin-right: 3%;
+}
+
+.item_thumbnail:before{
+	/* コンテント作成 */
+	content: "";		/* 変更不可 */
+
+	/* 表示 */
+	display: block;		/* 変更不可 */
+
+	/* パディング */
+	padding-bottom: 100%;	/* ←縦横比に合わせて変更 */
+}
+
+.item_thumbnail:hover{
+	/* 色 */
+	opacity: 0.5;
+}
